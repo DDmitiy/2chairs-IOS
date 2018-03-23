@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		EDC781A52065402500975E9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC781A42065402500975E9F /* AppDelegate.swift */; };
 		EDC781A72065402500975E9F /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC781A62065402500975E9F /* art.scnassets */; };
-		EDC781A92065402500975E9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC781A82065402500975E9F /* ViewController.swift */; };
+		EDC781A92065402500975E9F /* ChairsPlacerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC781A82065402500975E9F /* ChairsPlacerVC.swift */; };
 		EDC781AC2065402500975E9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC781AA2065402500975E9F /* Main.storyboard */; };
 		EDC781AE2065402500975E9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC781AD2065402500975E9F /* Assets.xcassets */; };
 		EDC781B12065402500975E9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC781AF2065402500975E9F /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		EDC781A12065402500975E9F /* 2chairs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2chairs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDC781A42065402500975E9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDC781A62065402500975E9F /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		EDC781A82065402500975E9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EDC781A82065402500975E9F /* ChairsPlacerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChairsPlacerVC.swift; sourceTree = "<group>"; };
 		EDC781AB2065402500975E9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EDC781AD2065402500975E9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDC781B02065402500975E9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 			children = (
 				EDC781A42065402500975E9F /* AppDelegate.swift */,
 				EDC781A62065402500975E9F /* art.scnassets */,
-				EDC781A82065402500975E9F /* ViewController.swift */,
+				EDC781A82065402500975E9F /* ChairsPlacerVC.swift */,
 				EDC781AA2065402500975E9F /* Main.storyboard */,
 				EDC781AD2065402500975E9F /* Assets.xcassets */,
 				EDC781AF2065402500975E9F /* LaunchScreen.storyboard */,
@@ -140,7 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDC781A92065402500975E9F /* ViewController.swift in Sources */,
+				EDC781A92065402500975E9F /* ChairsPlacerVC.swift in Sources */,
 				EDC781A52065402500975E9F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
