@@ -7,23 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EDC781A52065402500975E9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC781A42065402500975E9F /* AppDelegate.swift */; };
+		ED838BEF2066881100B49C52 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED838BEE2066881100B49C52 /* APIService.swift */; };
+		EDA026B72066947900CF4753 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA026B62066947900CF4753 /* Constants.swift */; };
+		EDB49CE2E415A307BB8813EB /* Pods_2chairs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A36463F05DDA62792C628477 /* Pods_2chairs.framework */; };
 		EDC781A72065402500975E9F /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC781A62065402500975E9F /* art.scnassets */; };
 		EDC781A92065402500975E9F /* ChairsPlacerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC781A82065402500975E9F /* ChairsPlacerVC.swift */; };
 		EDC781AC2065402500975E9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC781AA2065402500975E9F /* Main.storyboard */; };
 		EDC781AE2065402500975E9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC781AD2065402500975E9F /* Assets.xcassets */; };
 		EDC781B12065402500975E9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC781AF2065402500975E9F /* LaunchScreen.storyboard */; };
+		EDDA0E6720669A96002F24CE /* if_plus_alt_118618-2.png in Resources */ = {isa = PBXBuildFile; fileRef = EDDA0E6620669A96002F24CE /* if_plus_alt_118618-2.png */; };
+		EDDA0E6920669C70002F24CE /* CompaniesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDA0E6820669C70002F24CE /* CompaniesVC.swift */; };
+		EDDA0E6B20669CF3002F24CE /* if_x_alt_118584.png in Resources */ = {isa = PBXBuildFile; fileRef = EDDA0E6A20669CF3002F24CE /* if_x_alt_118584.png */; };
+		EDDA0E6D20669D43002F24CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDA0E6C20669D43002F24CE /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5FE2DC5901BFD9A616C472EB /* Pods-2chairs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-2chairs.release.xcconfig"; path = "Pods/Target Support Files/Pods-2chairs/Pods-2chairs.release.xcconfig"; sourceTree = "<group>"; };
+		6E86DDA2EC49594290262184 /* Pods-2chairs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-2chairs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-2chairs/Pods-2chairs.debug.xcconfig"; sourceTree = "<group>"; };
+		A36463F05DDA62792C628477 /* Pods_2chairs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_2chairs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED838BEE2066881100B49C52 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		EDA026B62066947900CF4753 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EDC781A12065402500975E9F /* 2chairs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2chairs.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EDC781A42065402500975E9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDC781A62065402500975E9F /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		EDC781A82065402500975E9F /* ChairsPlacerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChairsPlacerVC.swift; sourceTree = "<group>"; };
 		EDC781AB2065402500975E9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EDC781AD2065402500975E9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDC781B02065402500975E9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDC781B22065402500975E9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDDA0E6620669A96002F24CE /* if_plus_alt_118618-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "if_plus_alt_118618-2.png"; sourceTree = "<group>"; };
+		EDDA0E6820669C70002F24CE /* CompaniesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompaniesVC.swift; sourceTree = "<group>"; };
+		EDDA0E6A20669CF3002F24CE /* if_x_alt_118584.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = if_x_alt_118584.png; sourceTree = "<group>"; };
+		EDDA0E6C20669D43002F24CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDB49CE2E415A307BB8813EB /* Pods_2chairs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB7F9D99E4283490A3574224 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A36463F05DDA62792C628477 /* Pods_2chairs.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E37B0D8E6288D656F309F1E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E86DDA2EC49594290262184 /* Pods-2chairs.debug.xcconfig */,
+				5FE2DC5901BFD9A616C472EB /* Pods-2chairs.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EDC781982065402500975E9F = {
 			isa = PBXGroup;
 			children = (
 				EDC781A32065402500975E9F /* 2chairs */,
 				EDC781A22065402500975E9F /* Products */,
+				E37B0D8E6288D656F309F1E8 /* Pods */,
+				DB7F9D99E4283490A3574224 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,13 +90,18 @@
 		EDC781A32065402500975E9F /* 2chairs */ = {
 			isa = PBXGroup;
 			children = (
-				EDC781A42065402500975E9F /* AppDelegate.swift */,
 				EDC781A62065402500975E9F /* art.scnassets */,
-				EDC781A82065402500975E9F /* ChairsPlacerVC.swift */,
+				EDDA0E6C20669D43002F24CE /* AppDelegate.swift */,
 				EDC781AA2065402500975E9F /* Main.storyboard */,
 				EDC781AD2065402500975E9F /* Assets.xcassets */,
+				EDDA0E6A20669CF3002F24CE /* if_x_alt_118584.png */,
+				EDDA0E6620669A96002F24CE /* if_plus_alt_118618-2.png */,
 				EDC781AF2065402500975E9F /* LaunchScreen.storyboard */,
 				EDC781B22065402500975E9F /* Info.plist */,
+				ED838BEE2066881100B49C52 /* APIService.swift */,
+				EDA026B62066947900CF4753 /* Constants.swift */,
+				EDC781A82065402500975E9F /* ChairsPlacerVC.swift */,
+				EDDA0E6820669C70002F24CE /* CompaniesVC.swift */,
 			);
 			path = 2chairs;
 			sourceTree = "<group>";
@@ -74,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EDC781B52065402500975E9F /* Build configuration list for PBXNativeTarget "2chairs" */;
 			buildPhases = (
+				879140846586F29F4B6FAB97 /* [CP] Check Pods Manifest.lock */,
 				EDC7819D2065402500975E9F /* Sources */,
 				EDC7819E2065402500975E9F /* Frameworks */,
 				EDC7819F2065402500975E9F /* Resources */,
+				C2DB8E104C160C1A88A4D605 /* [CP] Embed Pods Frameworks */,
+				03852480F51783358DC05DFE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,14 +168,64 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDDA0E6720669A96002F24CE /* if_plus_alt_118618-2.png in Resources */,
 				EDC781A72065402500975E9F /* art.scnassets in Resources */,
 				EDC781B12065402500975E9F /* LaunchScreen.storyboard in Resources */,
 				EDC781AE2065402500975E9F /* Assets.xcassets in Resources */,
+				EDDA0E6B20669CF3002F24CE /* if_x_alt_118584.png in Resources */,
 				EDC781AC2065402500975E9F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03852480F51783358DC05DFE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-2chairs/Pods-2chairs-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		879140846586F29F4B6FAB97 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C2DB8E104C160C1A88A4D605 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-2chairs/Pods-2chairs-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EDC7819D2065402500975E9F /* Sources */ = {
@@ -141,7 +233,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDC781A92065402500975E9F /* ChairsPlacerVC.swift in Sources */,
-				EDC781A52065402500975E9F /* AppDelegate.swift in Sources */,
+				ED838BEF2066881100B49C52 /* APIService.swift in Sources */,
+				EDDA0E6920669C70002F24CE /* CompaniesVC.swift in Sources */,
+				EDDA0E6D20669D43002F24CE /* AppDelegate.swift in Sources */,
+				EDA026B72066947900CF4753 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +371,7 @@
 		};
 		EDC781B62065402500975E9F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E86DDA2EC49594290262184 /* Pods-2chairs.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -292,6 +388,7 @@
 		};
 		EDC781B72065402500975E9F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FE2DC5901BFD9A616C472EB /* Pods-2chairs.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

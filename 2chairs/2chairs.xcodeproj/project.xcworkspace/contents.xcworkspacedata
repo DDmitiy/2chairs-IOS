@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:2chairs.xcodeproj">
+      location = "group:cupboard.dae">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
