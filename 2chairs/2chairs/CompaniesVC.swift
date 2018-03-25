@@ -11,6 +11,7 @@ import UIKit
 class CompaniesVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var companiesTableView: UITableView!
+    var companies = ["Ля Мебеля", "Всё в дом", "Стул & стол", "Обстановочка", "Roombox", "Авангард", "Сибарит", "Евростиль" ,"Империя мебели","Мебельная лавка", "Штрих", "Лидер", "Красный дом", "Космос"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,22 +19,23 @@ class CompaniesVC: UIViewController, UITableViewDataSource, UITableViewDelegate 
         self.companiesTableView.dataSource = self
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        APIService.instance.getCompanies { (success, error) in
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "items" {
+            let destinationVC = segue.destination as! ItemsVC
+             destinationVC.companyName = "\(companies[(self.companiesTableView.indexPathForSelectedRow?.row)!])"
         }
     }
     
-    @IBAction func SceneBtn(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return APIService.instance.companies.count
+        return companies.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
          let cell = tableView.dequeueReusableCell(withIdentifier: "company")
-        cell?.textLabel?.text = APIService.instance.companies[indexPath.row]
+        cell?.textLabel?.text = companies[indexPath.row]
         return cell!
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "items", sender: nil)
     }
 }

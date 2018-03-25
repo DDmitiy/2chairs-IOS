@@ -14,7 +14,8 @@ class ChairsPlacerVC: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
     var nodeModel : SCNNode!
-    let nodeName = "cupboard"
+    @IBOutlet weak var rotateBtn: UIButton!
+    let nodeName = "frame"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +24,7 @@ class ChairsPlacerVC: UIViewController, ARSCNViewDelegate {
         sceneView.antialiasingMode = .multisampling4X
         let scene = SCNScene()
         sceneView.scene = scene
-        let modelScene = SCNScene(named: "art.scnassets/сupboard.scn")!
+        let modelScene = SCNScene(named: "art.scnassets/frame.scn")!
         nodeModel =  modelScene.rootNode.childNode(
             withName: nodeName, recursively: true)
     }
@@ -31,7 +32,6 @@ class ChairsPlacerVC: UIViewController, ARSCNViewDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         let configuration = ARWorldTrackingConfiguration()
-        configuration.planeDetection = .horizontal
         sceneView.session.run(configuration)
     }
     
@@ -97,8 +97,8 @@ class ChairsPlacerVC: UIViewController, ARSCNViewDelegate {
             }
         }
     }
+    
     @IBAction func CompaniesBtn(_ sender: Any) {
         performSegue(withIdentifier: "companies", sender: nil)
     }
-    
 }
