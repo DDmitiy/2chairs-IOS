@@ -197,9 +197,11 @@
                     <connections>
                         <outlet property="companyNameLabel" destination="n8m-me-xhY" id="fiq-qY-kdl"/>
                         <outlet property="itemsTableView" destination="N7b-Mm-utO" id="Ipi-uM-e2U"/>
+                        <segue destination="r06-yd-5b4" kind="unwind" identifier="placer" unwindAction="unwindChairsPlacerVCWithSegue:" id="81C-Ir-uCd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="srM-UU-m25" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="r06-yd-5b4" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1673.913043478261" y="133.69565217391306"/>
         </scene>

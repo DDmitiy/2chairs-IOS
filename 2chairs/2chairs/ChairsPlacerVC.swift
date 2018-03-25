@@ -14,8 +14,7 @@ class ChairsPlacerVC: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
     var nodeModel : SCNNode!
-    @IBOutlet weak var rotateBtn: UIButton!
-    let nodeName = "frame"
+    var nodeName = "cupboard"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,21 +23,24 @@ class ChairsPlacerVC: UIViewController, ARSCNViewDelegate {
         sceneView.antialiasingMode = .multisampling4X
         let scene = SCNScene()
         sceneView.scene = scene
-        let modelScene = SCNScene(named: "art.scnassets/frame.scn")!
-        nodeModel =  modelScene.rootNode.childNode(
-            withName: nodeName, recursively: true)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         let configuration = ARWorldTrackingConfiguration()
         sceneView.session.run(configuration)
+        let modelScene = SCNScene(named: "art.scnassets/\(nodeName).scn")!
+        nodeModel =  modelScene.rootNode.childNode(
+            withName: nodeName, recursively: true)
+        log.debug(nodeName)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         sceneView.session.pause()
     }
+    
+    @IBAction func unwindChairsPlacerVC(segue:UIStoryboardSegue) {}
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         

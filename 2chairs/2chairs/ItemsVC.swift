@@ -12,7 +12,7 @@ class ItemsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var companyNameLabel: UILabel!
     
     @IBOutlet weak var itemsTableView: UITableView!
-    var names = ["Шкаф", "Стол", "Картина"]
+    var names = ["Шкаф", "Cтол", "Картина"]
     var prices = ["9299р", "5599р", "1999р"]
     var images = ["cupboard", "table", "frame"]
     var companyName: String = ""
@@ -24,11 +24,11 @@ class ItemsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         companyNameLabel.text = companyName
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-    }
-    
-    @IBAction func SceneBtn(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "placer" {
+            let destinationVC = segue.destination as! ChairsPlacerVC
+            destinationVC.nodeName = "\(images[(self.itemsTableView.indexPathForSelectedRow?.row)!])"
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -41,6 +41,10 @@ class ItemsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         cell.priceLabel.text = prices[indexPath.row]
         cell.itemImageView.image = UIImage(named : "\(images[indexPath.row])")
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "placer", sender: nil)
     }
     
     @IBAction func companyVC(_ sender: Any) {
